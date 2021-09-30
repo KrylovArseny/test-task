@@ -1,0 +1,119 @@
+body {
+  text-align: center;
+  transition: all 1s ease;
+}
+.vh{
+  margin-top: 20vh;
+}
+
+  .name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.name > p {
+  font-size: 18px;
+}
+
+#inp {
+  text-transform: uppercase;
+  padding: 0 15px 0 15px;
+  line-height: 48px;
+  border: 1px solid #333;
+  box-sizing: border-box;
+  border-radius: 500px;
+  max-width: 500px;
+  width: 100%;
+  height: 30px;
+  margin-left: 20px;
+}
+
+select {
+  border: 1px solid #333;
+  width: 30%;
+  height: 30px;
+}
+
+
+button {
+  height: 45px;
+  border-radius: 500px;
+  border: 1px solid #333;
+  font-size: 16px;
+  width: 20%;
+  margin: 20px 0;
+  min-width: 100px;
+}
+
+select:nth-child(2){
+  margin: 0 20px;
+}
+  #brands {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #response {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#response > div {
+  padding: 20px;
+  border: 1px solid;
+  margin: 10px;
+  max-width: 23%;
+}
+
+p {
+  font-weight: bold;
+}
+p::before{
+  font-weight: normal;
+}
+
+#response > div > p:nth-child(1)::before {
+  content: 'Тип корабля: ';
+}
+
+#response > div > p:nth-child(2)::before {
+  content: 'Страна: ';
+}
+
+#response > div > p:nth-child(3)::before {
+  content: 'Тип: ';
+}
+
+#response > div > p:nth-child(4)::before {
+  content: 'Имя: ';
+}
+
+#response > div > p:nth-child(5)::before {
+  content: 'Цена: ';
+}
+
+@media (max-width: 761px) {
+  .name > p {
+    margin-bottom: 4px;
+}
+#inp{
+  width: 90%;
+  margin-left: 0px;
+}
+  .name{
+    display: block;
+    margin-bottom: 20px;
+  }
+  select{
+    width: 90%;
+  }
+  select:nth-child(2){
+    margin: 20px 0;
+  }
+  #response > div {
+    max-width: 50%;
+}
+
+}
